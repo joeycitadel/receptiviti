@@ -1,0 +1,33 @@
+This is a JavaScript program and can be run via node to get results.
+
+
+A square matrix is used to represent the paths in the directed graph.
+If there are 5 nodes, the matrix will have 5 rows, each having 5 values.
+Each value represents a path, if exists, from the row node to the column node.
+
+Define the grach as you would using a string, and replace the variable at program start.
+
+Exhaustive searches would be conducted to do any of the following tasks:
+1. Find all paths from A to B
+2. Find the shortest path from #1
+3. Find the paths originating from A with n stops
+4. Find the paths originating from A with total distance of less than m
+
+Recursive calls are used for these searches for readability.
+For shortest paths, at each iteration, the path just travelled is temporarily cleared, to avoid loops.
+For #3 and #4 above, loops are not a concern.
+
+The following are the output of the program.
+
+1. The distance of the route A-B-C: 9
+2. The distance of the route A-D: 5
+3. The distance of the route A-D-C: 13
+4. The distance of the route A-E-B-C-D: 22
+5. The distance of the route A-E-D: NO SUCH ROUTE
+6. Number of trips from C to C with <= 3 stops: 2
+7. Number of paths from A to C with 4 stops: 3
+8. Length of shortest path from A to C: 9
+9. Length of shortest path from B to B: 9
+10. Paths from C to C with distance < 30: CDC,CDCEBC,CDEBC,CEBC,CEBCDC,CEBCEBC,CEBCEBCEBC
+
+Joey
